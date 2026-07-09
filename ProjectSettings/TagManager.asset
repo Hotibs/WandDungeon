@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - BackGround
+  - Ground
+  - Player
+  - Spell
+  - Monster
+  - MonsterProjectile
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 2941955227
+    locked: 0
+  - name: ObjectTile
+    uniqueID: 1778482587
+    locked: 0
+  - name: Monster
+    uniqueID: 3151501869
+    locked: 0
+  - name: Player
+    uniqueID: 1624035543
+    locked: 0
+  m_RenderingLayers:
+  - Default
