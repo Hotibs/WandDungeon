@@ -44,7 +44,10 @@ public class MapGrid : MonoBehaviour
         
     }
 
-
+    public int[,] GetMap()
+    {
+        return map;
+    }
     void CreateGrid()
     {
         map[start.x,start.y] = 1;       //시작 지점 및 길
@@ -65,7 +68,7 @@ public class MapGrid : MonoBehaviour
     void CreateMap() 
     {
         Vector2Int startPos = new Vector2Int(start.x, start.y);
-        Vector2Int currentPos = startPos;
+        Vector2Int currentPos;
         Vector2Int targetPos = new Vector2Int();
         
         for (int i = 2; i < 6; i++) 

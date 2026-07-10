@@ -3,14 +3,14 @@ using UnityEngine.UI;
 
 public class DrawMap : MonoBehaviour
 {
-    Color colorEmpty = Color.gray;   
+    Color colorEmpty = new Color(0,0,0,0);   
     Color colorStart = Color.green;
     Color colorBoss = Color.darkRed;
     Color colorMiniBoss = Color.red;
     Color colorShop = Color.yellow;
     Color colorReward = Color.purple;
     Color colorPath = Color.white;
-    Color colorCrrent = Color.black;
+    Color colorCurrent = Color.black;
 
 
     public void MapDisplay(int[,] map)
@@ -52,7 +52,7 @@ public class DrawMap : MonoBehaviour
             case 6:
                 return colorPath;
             case 10:
-                return colorCrrent;
+                return colorCurrent;
             default:
                 return colorEmpty;
         }
