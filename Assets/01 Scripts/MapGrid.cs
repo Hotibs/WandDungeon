@@ -35,7 +35,7 @@ public class MapGrid : MonoBehaviour
         CreateGrid();
         CreateMap();
         dm.MapDisplay(map);
-        DebugGrid();
+        
     }
     
     // Update is called once per frame
@@ -56,7 +56,7 @@ public class MapGrid : MonoBehaviour
         map[shop.x, shop.y] = 4;        //상점방
         map[reward.x, reward.y] = 5;    //보상방
     }
-
+    /*
     void DebugGrid()
     {
         for (int i = 0; i < 9; i++)
@@ -64,7 +64,7 @@ public class MapGrid : MonoBehaviour
             Debug.Log($"{map[0, i]}{map[1, i]}{map[2, i]}{map[3, i]}{map[4,i]}{map[5, i]}{map[6, i]}{map[7, i]}{map[8, i]}");
         }
     }
-
+    */
     void CreateMap() 
     {
         Vector2Int startPos = new Vector2Int(start.x, start.y);

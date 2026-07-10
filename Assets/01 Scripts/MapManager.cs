@@ -72,6 +72,12 @@ public class MapManager : MonoBehaviour
         
     }
 
+    public void MoveNextRoom(Vector2Int dir)
+    {
+        //다음방 이동 dir 방향
+        
+    }
+
     void MoveMap()
     {
 
