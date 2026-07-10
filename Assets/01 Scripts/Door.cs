@@ -13,7 +13,7 @@ public class Door : MonoBehaviour
     }
     void Start()
     {
-        
+        OpenDoor();
     }
 
     

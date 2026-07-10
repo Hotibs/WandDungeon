@@ -35,6 +35,8 @@ public class DrawMap : MonoBehaviour
         }
     }
 
+    
+
     private Color GetColor(int value)
     {
         switch (value)

@@ -16,7 +16,7 @@ public class WallDoorContoller : MonoBehaviour
         if (hasUp)
         {
             GameObject doorObj = Instantiate(door, upAnchor.transform);
-            doorObj.GetComponent<Door>().doorDir = Vector2Int.up;
+            doorObj.GetComponent<Door>().doorDir = Vector2Int.down;
         }
         else{
             Instantiate(wall, upAnchor.transform);
@@ -24,7 +24,7 @@ public class WallDoorContoller : MonoBehaviour
         if (hasDown)
         {
             GameObject doorObj = Instantiate(door, downAnchor.transform);
-            doorObj.GetComponent<Door>().doorDir = Vector2Int.down;
+            doorObj.GetComponent<Door>().doorDir = Vector2Int.up;
         }
         else
         {

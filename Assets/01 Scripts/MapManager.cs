@@ -7,6 +7,7 @@ public class MapManager : MonoBehaviour
 
     [SerializeField] WallDoorContoller wallDoor;
     [SerializeField] MapGrid mg;
+    DrawMap dm;
 
     Vector2Int currentMapPos;
     Vector2Int startPos;
@@ -33,7 +34,7 @@ public class MapManager : MonoBehaviour
     }
     void Start()
     {
-        
+        dm = FindFirstObjectByType<DrawMap>();
         map = mg.GetMap();
         SetDoorWall();
     }
@@ -52,11 +53,11 @@ public class MapManager : MonoBehaviour
         bool hasLeft = false;
         bool hasRight = false;
 
-        if(map[currentMapPos.x,currentMapPos.y + 1 ]!= 0)
+        if(map[currentMapPos.x,currentMapPos.y - 1 ]!= 0)
         {
             hasUp = true;
         }
-        if(map[currentMapPos.x,currentMapPos.y - 1] != 0)
+        if(map[currentMapPos.x,currentMapPos.y + 1] != 0)
         {
             hasDown = true;
         }
@@ -75,7 +76,10 @@ public class MapManager : MonoBehaviour
     public void MoveNextRoom(Vector2Int dir)
     {
         //다음방 이동 dir 방향
-        
+        currentMapPos += dir;
+        map[currentMapPos.x, currentMapPos.y] = 10; // 현재 위치
+        dm.MapDisplay(map);
+        MoveMap();
     }
 
     void MoveMap()
