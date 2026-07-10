@@ -9,11 +9,12 @@ public class MapGrid : MonoBehaviour
     private int[,] map;
 
     private Vector2Int boss;
+    private Vector2Int miniBoss;
     private Vector2Int start;
     private Vector2Int shop;
     private Vector2Int reward;
     
-
+    DrawMap dm = new DrawMap();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,14 +24,17 @@ public class MapGrid : MonoBehaviour
     }
     private void OnEnable()
     {
+        dm = FindFirstObjectByType<DrawMap>();
         map = new int[9, 9];
         start = new Vector2Int(4, 4);
-        boss = new Vector2Int(Random.Range(0, 2) == 1 ? Random.Range(0, 2) : Random.Range(7, 9), Random.Range(0, 2) == 1 ? Random.Range(0, 2) : Random.Range(7, 9));
+        boss = new Vector2Int(Random.Range(0, 2) == 1 ? Random.Range(0, 2) : Random.Range(7, 9),Random.Range(7, 9));
+        miniBoss = new Vector2Int(Random.Range(0, 2) == 1 ? Random.Range(0, 2) : Random.Range(7, 9), Random.Range(0, 2));
         shop = new Vector2Int(Random.Range(6, 8), Random.Range(3, 6));
         reward = new Vector2Int(Random.Range(1, 3), Random.Range(3, 6));
 
         CreateGrid();
         CreateMap();
+        dm.MapDisplay(map);
         DebugGrid();
     }
     
@@ -44,9 +48,10 @@ public class MapGrid : MonoBehaviour
     void CreateGrid()
     {
         map[start.x,start.y] = 1;       //시작 지점 및 길
-        map[boss.x, boss.y] = 2;        //보스방 
-        map[shop.x, shop.y] = 3;        //상점방
-        map[reward.x, reward.y] = 4;    //보상방
+        map[boss.x, boss.y] = 2;        //보스방
+        map[miniBoss.x, miniBoss.y]=3;  //미니보스방 
+        map[shop.x, shop.y] = 4;        //상점방
+        map[reward.x, reward.y] = 5;    //보상방
     }
 
     void DebugGrid()
@@ -63,12 +68,13 @@ public class MapGrid : MonoBehaviour
         Vector2Int currentPos = startPos;
         Vector2Int targetPos = new Vector2Int();
         
-        for (int i = 2; i < 5; i++) 
+        for (int i = 2; i < 6; i++) 
         {
 
             if (i == 2) targetPos = boss;
-            else if (i == 3) targetPos = shop;
-            else if (i == 4) targetPos = reward;
+            else if (i == 3) targetPos = miniBoss;
+            else if (i == 4) targetPos = shop;
+            else if (i == 5) targetPos = reward;
 
             currentPos = startPos;
             
@@ -103,7 +109,7 @@ public class MapGrid : MonoBehaviour
                 }
                 if (map[currentPos.x, currentPos.y] == 0)
                 {
-                    map[currentPos.x, currentPos.y] = 5;
+                    map[currentPos.x, currentPos.y] = 6;
                 }
             }
             
