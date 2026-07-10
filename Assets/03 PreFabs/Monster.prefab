@@ -105,9 +105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41ee13eb638ca634d9e75a2e74511b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterController
-  maxHP: 0
-  nowHP: 0
-  moveSpeed: 0
+  maxHP: 100
+  nowHP: 100
+  moveSpeed: 2
 --- !u!61 &3194079095143433688
 BoxCollider2D:
   m_ObjectHideFlags: 0
