@@ -34,7 +34,7 @@ public class MapGrid : MonoBehaviour
 
         CreateGrid();
         CreateMap();
-        dm.MapDisplay(map);
+        dm.MapDisplay(map,start);
         
     }
     

@@ -76,9 +76,11 @@ public class MapManager : MonoBehaviour
     public void MoveNextRoom(Vector2Int dir)
     {
         //다음방 이동 dir 방향
+        
+
         currentMapPos += dir;
-        map[currentMapPos.x, currentMapPos.y] = 10; // 현재 위치
-        dm.MapDisplay(map);
+         // 현재 위치
+        dm.MapDisplay(map,currentMapPos);
         MoveMap();
     }
 

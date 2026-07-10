@@ -13,7 +13,7 @@ public class DrawMap : MonoBehaviour
     Color colorCurrent = Color.black;
 
 
-    public void MapDisplay(int[,] map)
+    public void MapDisplay(int[,] map,Vector2Int currentLocate)
     {
         int width = map.GetLength(0);
         int height = map.GetLength(1);
@@ -28,8 +28,16 @@ public class DrawMap : MonoBehaviour
 
                 if (img != null)
                 {
-                    int mapValue = map[x, y];
-                    img.color = GetColor(mapValue);
+                    if(x==currentLocate.x && y == currentLocate.y)
+                    {
+                        img.color = colorCurrent;
+                    }
+                    else
+                    {
+                        int mapValue = map[x, y];
+                        img.color = GetColor(mapValue);
+                    }
+                        
                 }
             }
         }
