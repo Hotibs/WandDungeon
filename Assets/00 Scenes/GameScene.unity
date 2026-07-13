@@ -3079,6 +3079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a0b514b6d452c4594e4ab6d6827d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapManager
+  player: {fileID: 1903584061}
+  spawnPadding: 3.06
   mg: {fileID: 1040267587}
   mapPrefabs:
   - {fileID: 7825514714521785739, guid: 925966ef9ddbfe848bfba4cd2f998084, type: 3}
