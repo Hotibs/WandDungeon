@@ -91,6 +91,18 @@ public class MonsterController : MonoBehaviour
     {
         ObjectPoolManager.instance.ReturnObject("Monster",this.gameObject);
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        {
+            if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                Die();
+            }
+        }
+    }
+    
     
 
 }

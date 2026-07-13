@@ -50,7 +50,7 @@ public class MapGrid : MonoBehaviour
     }
     void CreateGrid()
     {
-        map[start.x,start.y] = 1;       //시작 지점 및 길
+        map[start.x,start.y] = 1;       //시작 지점
         map[boss.x, boss.y] = 2;        //보스방
         map[miniBoss.x, miniBoss.y]=3;  //미니보스방 
         map[shop.x, shop.y] = 4;        //상점방

@@ -10,9 +10,32 @@ public class WallDoorContoller : MonoBehaviour
     [SerializeField] Transform leftAnchor;
     [SerializeField] Transform rightAnchor;
     
+    public Transform UpAnchor()
+    {
+        return upAnchor;
+    }
+    public Transform DownAnchor()
+    {
+        return downAnchor;
+    }
+    public Transform LeftAnchor()
+    {
+        return leftAnchor;
+    }
+    public Transform RightAnchor()
+    {
+        return rightAnchor;
+    }
+
 
     public void SetDoor(bool hasUp, bool hasDown, bool hasLeft, bool hasRight)
     {
+        ClearAnchor(upAnchor);
+        ClearAnchor(downAnchor);
+        ClearAnchor(leftAnchor);
+        ClearAnchor(rightAnchor);
+
+
         if (hasUp)
         {
             GameObject doorObj = Instantiate(door, upAnchor.transform);
@@ -46,6 +69,14 @@ public class WallDoorContoller : MonoBehaviour
         else
         {
             Instantiate(wall, rightAnchor.transform);
+        }
+    }
+    private void ClearAnchor(Transform anchor)
+    {
+        if (anchor == null) return;
+        foreach (Transform child in anchor)
+        {
+            Destroy(child.gameObject);
         }
     }
 }
