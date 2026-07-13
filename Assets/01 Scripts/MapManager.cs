@@ -143,16 +143,49 @@ public class MapManager : MonoBehaviour
         GameObject currentMap = spawnMap[currentMapPos.x, currentMapPos.y];
         if (currentMap == null)
         {
-            spawnMap[currentMapPos.x,currentMapPos.y] = Instantiate(mapPrefabs[Random.Range(1,mapPrefabs.Count)]);
+            if (map[currentMapPos.x, currentMapPos.y] == 2)  //보스
+            {
+                currentMap = Instantiate(mapPrefabs[6]);
+                spawnMap[currentMapPos.x, currentMapPos.y] = currentMap;
+            }
+            else if (map[currentMapPos.x, currentMapPos.y] == 3) //미니보스
+            {
+                currentMap = Instantiate(mapPrefabs[7]);
+                spawnMap[currentMapPos.x, currentMapPos.y] = currentMap;
+            }
+            else if (map[currentMapPos.x, currentMapPos.y] == 4) //상점
+            {
+                currentMap = Instantiate(mapPrefabs[8]);
+                spawnMap[currentMapPos.x, currentMapPos.y] = currentMap;
+            }
+            else if (map[currentMapPos.x, currentMapPos.y] == 5) //보상
+            {
+                currentMap = Instantiate(mapPrefabs[9]);
+                spawnMap[currentMapPos.x, currentMapPos.y] = currentMap;
+            }
+            else
+            {
+                currentMap = Instantiate(mapPrefabs[Random.Range(1, mapPrefabs.Count - 4)]);
+                spawnMap[currentMapPos.x, currentMapPos.y] = currentMap;
+            }
+                
         }
         else
         {
             spawnMap[currentMapPos.x,currentMapPos.y].SetActive(true);
         }
-        mapState[currentMapPos.x, currentMapPos.y] = 2;
+
         PositionPlayer();
         SetDoorWall();
-        
+
+        MonsterSpawner ms = currentMap.GetComponentInChildren<MonsterSpawner>();
+        if (ms != null && mapState[currentMapPos.x,currentMapPos.y]==1)
+        {
+            ms.SpawnMonster();
+        }
+            
+        mapState[currentMapPos.x, currentMapPos.y] = 2;
+
     }
 
     void PositionPlayer()
@@ -169,6 +202,9 @@ public class MapManager : MonoBehaviour
         {
             return;
         }
+
+        
+
         Vector2 targetPos;
 
 

@@ -44,6 +44,9 @@ TagManager:
   - name: BackGround
     uniqueID: 2941955227
     locked: 0
+  - name: WallTile
+    uniqueID: 1043698627
+    locked: 0
   - name: ObjectTile
     uniqueID: 1778482587
     locked: 0
