@@ -1,18 +1,26 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
 
 public class MapManager : MonoBehaviour
 {
 
     public static MapManager instance;
 
-    [SerializeField] WallDoorContoller wallDoor;
+    
     [SerializeField] MapGrid mg;
     DrawMap dm;
+
+    [SerializeField] List<GameObject> mapPrefabs;
 
     Vector2Int currentMapPos;
     Vector2Int startPos;
 
     int[,] map;
+    int[,] mapState;
+
+    GameObject[,] spawnMap;
+
 
     private void Awake()
     {
@@ -36,6 +44,17 @@ public class MapManager : MonoBehaviour
     {
         dm = FindFirstObjectByType<DrawMap>();
         map = mg.GetMap();
+        int width = map.GetLength(0);
+        int height = map.GetLength(1);
+        spawnMap = new GameObject[width,height];
+        mapState = new int[width,height];
+        MapSetting();
+
+        GameObject startMap = Instantiate(mapPrefabs[0]);
+        spawnMap[currentMapPos.x,currentMapPos.y] = startMap;
+
+        
+        mapState[currentMapPos.x, currentMapPos.y] = 2;
         SetDoorWall();
     }
     
@@ -48,6 +67,19 @@ public class MapManager : MonoBehaviour
 
     void SetDoorWall()
     {
+        GameObject currentMapObj = spawnMap[currentMapPos.x, currentMapPos.y];
+        if (currentMapObj == null)
+        {
+            return;
+        }
+
+        WallDoorContoller wallDoor = currentMapObj.GetComponentInChildren<WallDoorContoller>();
+        if (wallDoor == null)
+        {
+            
+            return;
+        }
+
         bool hasUp=false;
         bool hasDown = false;
         bool hasLeft = false;
@@ -75,17 +107,43 @@ public class MapManager : MonoBehaviour
 
     public void MoveNextRoom(Vector2Int dir)
     {
-        //다음방 이동 dir 방향
+        spawnMap[currentMapPos.x,currentMapPos.y].SetActive(false);
         
-
         currentMapPos += dir;
-         // 현재 위치
         dm.MapDisplay(map,currentMapPos);
         MoveMap();
     }
+    void MapSetting()
+    {
+        int width = map.GetLength(0);
+        int height = map.GetLength(1);
 
+        for (int i = 0; i < width; i++) 
+        { 
+            for(int j = 0; j < height; j++)
+            {
+                if (map[i,j]!= 0)
+                {
+                    mapState[i,j] = 1;
+                }
+            }
+        }
+
+    }
     void MoveMap()
     {
 
+
+        GameObject currentMap = spawnMap[currentMapPos.x, currentMapPos.y];
+        if (currentMap == null)
+        {
+            spawnMap[currentMapPos.x,currentMapPos.y] = Instantiate(mapPrefabs[Random.Range(1,mapPrefabs.Count)]);
+        }
+        else
+        {
+            spawnMap[currentMapPos.x,currentMapPos.y].SetActive(true);
+        }
+        mapState[currentMapPos.x, currentMapPos.y] = 2;
+        SetDoorWall();
     }
 }
