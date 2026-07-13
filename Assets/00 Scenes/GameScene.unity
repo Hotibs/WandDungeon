@@ -1065,63 +1065,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279401442}
   m_CullTransparentMesh: 1
---- !u!1 &280335716
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 280335718}
-  - component: {fileID: 280335717}
-  m_Layer: 0
-  m_Name: StageManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &280335717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280335716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 795ef892d6270ee4bb7bbe57a50e0acf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageManager
-  summonDelay: 0
-  spawnArea:
-  - serializedVersion: 2
-    x: -10
-    y: -5
-    width: 7
-    height: 10
-  - serializedVersion: 2
-    x: 3
-    y: -5
-    width: 7
-    height: 10
-  color: {r: 1, g: 0, b: 0, a: 0.5}
---- !u!4 &280335718
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280335716}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35901, y: 0.31169, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294058039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,7 +1443,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1624035543
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -2301,7 +2244,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000d7d0cc609bac5aaf9b7d016a2d1ad8bb
+  m_ApplyToSortingLayers: 00000000d7d0cc609bac5aaf9b7d016a2d1ad8bbc393353e
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -3085,6 +3028,14 @@ MonoBehaviour:
   mapPrefabs:
   - {fileID: 7825514714521785739, guid: 925966ef9ddbfe848bfba4cd2f998084, type: 3}
   - {fileID: 1621859939273829618, guid: c43683a15506ccb43bd18be19225b16e, type: 3}
+  - {fileID: 1621859939273829618, guid: f143443ac3e1b4d43870a9bc9aa74b95, type: 3}
+  - {fileID: 1621859939273829618, guid: 19b555daa08859f4db6843c9f334c853, type: 3}
+  - {fileID: 1621859939273829618, guid: 5e6a68235ca3925439e25fb35ea447bc, type: 3}
+  - {fileID: 1621859939273829618, guid: 021897c655a62bf408c02fdaebe1a82f, type: 3}
+  - {fileID: 1621859939273829618, guid: 8c8ca4c6756c3634ca81a2e12a1888b0, type: 3}
+  - {fileID: 1621859939273829618, guid: cd3343e878357924099415dd985d398c, type: 3}
+  - {fileID: 1621859939273829618, guid: ac56afe0b9213a04c944ea8aaf3f6c62, type: 3}
+  - {fileID: 1621859939273829618, guid: 66b853f52ef00c647948f9f5ac9d10e2, type: 3}
 --- !u!4 &898320789
 Transform:
   m_ObjectHideFlags: 0
@@ -6457,7 +6408,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1624035543
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -7245,5 +7196,4 @@ SceneRoots:
   - {fileID: 1040267588}
   - {fileID: 771477335}
   - {fileID: 898320789}
-  - {fileID: 280335718}
   - {fileID: 150138260}
