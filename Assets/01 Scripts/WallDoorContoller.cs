@@ -27,21 +27,25 @@ public class WallDoorContoller : MonoBehaviour
         return rightAnchor;
     }
 
-
+    public void SetActiveDoor()
+    {
+        upAnchor.GetChild(0).gameObject.SetActive(true);
+        downAnchor.GetChild(0).gameObject.SetActive(true);
+        leftAnchor.GetChild(0).gameObject.SetActive(true);
+        rightAnchor.GetChild(0).gameObject.SetActive(true);
+    }
     public void SetDoor(bool hasUp, bool hasDown, bool hasLeft, bool hasRight)
     {
-        ClearAnchor(upAnchor);
-        ClearAnchor(downAnchor);
-        ClearAnchor(leftAnchor);
-        ClearAnchor(rightAnchor);
 
+        
 
         if (hasUp)
         {
             GameObject doorObj = Instantiate(door, upAnchor.transform);
             doorObj.GetComponent<Door>().doorDir = Vector2Int.down;
         }
-        else{
+        else
+        {
             Instantiate(wall, upAnchor.transform);
         }
         if (hasDown)
@@ -58,7 +62,8 @@ public class WallDoorContoller : MonoBehaviour
             GameObject doorObj = Instantiate(door, leftAnchor.transform);
             doorObj.GetComponent<Door>().doorDir = Vector2Int.left;
         }
-        else{
+        else
+        {
             Instantiate(wall, leftAnchor.transform);
         }
         if (hasRight)
@@ -71,6 +76,7 @@ public class WallDoorContoller : MonoBehaviour
             Instantiate(wall, rightAnchor.transform);
         }
     }
+    
     private void ClearAnchor(Transform anchor)
     {
         if (anchor == null) return;
