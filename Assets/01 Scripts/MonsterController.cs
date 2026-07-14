@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class MonsterController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class MonsterController : MonoBehaviour
     float range;
 
     SpriteRenderer sr;
+
+    public event Action OnDead;
 
     private void Start()
     {
@@ -89,7 +92,9 @@ public class MonsterController : MonoBehaviour
 
     void Die()
     {
+        OnDead?.Invoke();
         ObjectPoolManager.instance.ReturnObject("Monster",this.gameObject);
+
     }
 
 

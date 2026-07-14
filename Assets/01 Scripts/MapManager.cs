@@ -58,9 +58,9 @@ public class MapManager : MonoBehaviour
         GameObject startMap = Instantiate(mapPrefabs[0]);
         spawnMap[currentMapPos.x,currentMapPos.y] = startMap;
 
-        
-        mapState[currentMapPos.x, currentMapPos.y] = 2;
         SetDoorWall();
+        mapState[currentMapPos.x, currentMapPos.y] = 2;
+        
     }
     
 
@@ -105,6 +105,11 @@ public class MapManager : MonoBehaviour
         if( currentMapPos.x != 8 && map[currentMapPos.x + 1, currentMapPos.y] != 0)
         {
             hasRight = true;
+        }
+        if (mapState[currentMapPos.x, currentMapPos.y] == 2)
+        {
+            wallDoor.SetActiveDoor();
+            return;
         }
         wallDoor.SetDoor(hasUp,hasDown,hasLeft,hasRight);
         
