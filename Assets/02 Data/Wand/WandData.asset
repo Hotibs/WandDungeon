@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b522dc564d323408f259478962c0d2, type: 3}
   m_Name: WandData
   m_EditorClassIdentifier: Assembly-CSharp::WandData
-  wandName: 
-  slotCount: 0
-  castDelay: 0
-  rechargeTime: 0
-  maxMana: 0
-  manaRegen: 0
-  castCount: 0
+  wandName: BasicWand
+  slotCount: 3
+  castDelay: 0.4
+  rechargeTime: 0.8
+  maxMana: 100
+  manaRegen: 10
