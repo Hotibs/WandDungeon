@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 473886615414660323}
   - component: {fileID: 602011863780365516}
   - component: {fileID: 2418511659481987615}
+  - component: {fileID: 3230959814364992809}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -75,6 +76,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3230959814364992809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28394205798773079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &31320739450338153
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,6 +100,7 @@ GameObject:
   - component: {fileID: 4945705367743180168}
   - component: {fileID: 7076966596880351683}
   - component: {fileID: 1138868440571843020}
+  - component: {fileID: 3885753340868861633}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -150,6 +165,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3885753340868861633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31320739450338153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &153141193408438502
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellSlot
   wandData: {fileID: 11400000, guid: 5a752e69dfb3f0c48afe96c297738f45, type: 2}
+  spells: []
 --- !u!1 &330537925753025812
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +428,7 @@ GameObject:
   - component: {fileID: 1488696381049078609}
   - component: {fileID: 3171743376056626762}
   - component: {fileID: 1386400645674838199}
+  - component: {fileID: 7286850158879527553}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -463,6 +493,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7286850158879527553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330537925753025812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &339428785647478053
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +516,7 @@ GameObject:
   - component: {fileID: 4890547174469716274}
   - component: {fileID: 6392230170585707271}
   - component: {fileID: 3897477307804419679}
+  - component: {fileID: 2496035898345938268}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -538,6 +581,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2496035898345938268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339428785647478053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &345756043583576133
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +604,7 @@ GameObject:
   - component: {fileID: 8874907115913124743}
   - component: {fileID: 5496264632486375981}
   - component: {fileID: 4174154541693500777}
+  - component: {fileID: 6503630813452309994}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -613,6 +669,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6503630813452309994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345756043583576133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &372148517230622546
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +844,7 @@ GameObject:
   - component: {fileID: 2289480886095477263}
   - component: {fileID: 2230496980080967797}
   - component: {fileID: 4273880582010691290}
+  - component: {fileID: 7893626581800041676}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -840,6 +909,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7893626581800041676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520684727788334248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &563239801427792341
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +932,7 @@ GameObject:
   - component: {fileID: 4817361470107574841}
   - component: {fileID: 4866273288763351515}
   - component: {fileID: 1431637370909417842}
+  - component: {fileID: 8561437990113738305}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -915,6 +997,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8561437990113738305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563239801427792341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &604856145463938380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,6 +1097,7 @@ GameObject:
   - component: {fileID: 9042962873764464895}
   - component: {fileID: 5123322822329123723}
   - component: {fileID: 6564241740373456313}
+  - component: {fileID: 3193770325785709879}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -1067,6 +1162,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3193770325785709879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627135532861486579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &631886128247503773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1340,7 @@ GameObject:
   - component: {fileID: 6582292884432833513}
   - component: {fileID: 7773041136136156801}
   - component: {fileID: 5488402457620700827}
+  - component: {fileID: 8052526933332666350}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -1296,6 +1405,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8052526933332666350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935903725156941767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &1123895502353450675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,6 +1619,7 @@ GameObject:
   - component: {fileID: 1000682209168943616}
   - component: {fileID: 302383425422370227}
   - component: {fileID: 480405916873262365}
+  - component: {fileID: 8215350653749779919}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -1561,6 +1684,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8215350653749779919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340256885689394487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &1345296599682771711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,6 +1784,7 @@ GameObject:
   - component: {fileID: 8367639074392028375}
   - component: {fileID: 7995265148758503481}
   - component: {fileID: 5639007203563119679}
+  - component: {fileID: 1743805917093395824}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -1713,6 +1849,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1743805917093395824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355074578714382322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &1387848578942598945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,6 +1873,7 @@ GameObject:
   - component: {fileID: 4754758569247360070}
   - component: {fileID: 2231615480797339901}
   - component: {fileID: 7760269343521075998}
+  - component: {fileID: 1844478706050216856}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -1788,6 +1938,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1844478706050216856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387848578942598945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &1444649400802988963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,6 +2038,7 @@ GameObject:
   - component: {fileID: 4619025126603986809}
   - component: {fileID: 6331523910461943969}
   - component: {fileID: 8170773708091249775}
+  - component: {fileID: 4972403410432496483}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -1940,6 +2103,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4972403410432496483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459319538946888917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &1571359149599968031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,6 +2127,7 @@ GameObject:
   - component: {fileID: 4793605516287659433}
   - component: {fileID: 2789042670559241202}
   - component: {fileID: 6527704498435940057}
+  - component: {fileID: 1984729938550383053}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -2015,6 +2192,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1984729938550383053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571359149599968031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &1743953558589385186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,6 +2215,7 @@ GameObject:
   - component: {fileID: 5502311999530196872}
   - component: {fileID: 7587484595542404472}
   - component: {fileID: 3846123726030509469}
+  - component: {fileID: 6430072356166820720}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -2090,6 +2280,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6430072356166820720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743953558589385186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &1948760501009483631
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,6 +2380,7 @@ GameObject:
   - component: {fileID: 5510258240597531601}
   - component: {fileID: 689275316692658898}
   - component: {fileID: 3272583374903159250}
+  - component: {fileID: 5696759093662411327}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -2242,6 +2445,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5696759093662411327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2155512228918361211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &2155569326789891630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,6 +2469,7 @@ GameObject:
   - component: {fileID: 2692474061745885989}
   - component: {fileID: 2017897372216380464}
   - component: {fileID: 5261770509839006296}
+  - component: {fileID: 916475548388910440}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -2317,6 +2534,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &916475548388910440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2155569326789891630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &2231210853732677138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +2635,7 @@ GameObject:
   - component: {fileID: 8648151730535013086}
   - component: {fileID: 7044621045916972979}
   - component: {fileID: 3495215513212644825}
+  - component: {fileID: 7567107157143127061}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -2469,6 +2700,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7567107157143127061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2342691852933742839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &2382408608337674719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,6 +2723,7 @@ GameObject:
   - component: {fileID: 2142999420280647656}
   - component: {fileID: 9125163742579846177}
   - component: {fileID: 6287437459370467169}
+  - component: {fileID: 559613478063385040}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -2544,6 +2788,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &559613478063385040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2382408608337674719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &2646665068344819868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,6 +2811,7 @@ GameObject:
   - component: {fileID: 6185819369878741181}
   - component: {fileID: 1777908253295407499}
   - component: {fileID: 7938087606675249774}
+  - component: {fileID: 4479180611259520780}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -2619,6 +2876,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4479180611259520780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2646665068344819868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &2652543215293939986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,6 +2977,7 @@ GameObject:
   - component: {fileID: 4048814822735258788}
   - component: {fileID: 3941508345410871934}
   - component: {fileID: 4450858796090814182}
+  - component: {fileID: 7544162706024415616}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -2771,6 +3042,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7544162706024415616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2676472968195553604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &2778855071152190439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,6 +3066,7 @@ GameObject:
   - component: {fileID: 1695061476448263797}
   - component: {fileID: 4458382548401789337}
   - component: {fileID: 4746927458182283616}
+  - component: {fileID: 7406465143780768335}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -2846,6 +3131,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7406465143780768335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778855071152190439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &3000132768091355906
 GameObject:
   m_ObjectHideFlags: 0
@@ -2857,6 +3155,7 @@ GameObject:
   - component: {fileID: 5243206407396067744}
   - component: {fileID: 1845382533935326649}
   - component: {fileID: 9050208829370557152}
+  - component: {fileID: 800487834209326178}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -2921,6 +3220,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &800487834209326178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000132768091355906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &3200290921544172907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,6 +3397,7 @@ GameObject:
   - component: {fileID: 4151870420128450049}
   - component: {fileID: 8379736550060780191}
   - component: {fileID: 5994149087460012028}
+  - component: {fileID: 2677220919094394430}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -3150,6 +3462,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2677220919094394430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3243163585995330780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &3363789645319053217
 GameObject:
   m_ObjectHideFlags: 0
@@ -3161,6 +3485,7 @@ GameObject:
   - component: {fileID: 3811574009332976781}
   - component: {fileID: 3978135914493620441}
   - component: {fileID: 2059747506891363658}
+  - component: {fileID: 2284417643313677343}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -3225,6 +3550,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2284417643313677343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3363789645319053217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &3462065358240226407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3236,6 +3574,7 @@ GameObject:
   - component: {fileID: 5117410030806197656}
   - component: {fileID: 4399954115569847830}
   - component: {fileID: 2622028748747044336}
+  - component: {fileID: 776901392472904547}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -3300,6 +3639,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &776901392472904547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3462065358240226407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &3477590306930729141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,6 +3739,7 @@ GameObject:
   - component: {fileID: 1747543240152140121}
   - component: {fileID: 949617023702898410}
   - component: {fileID: 5048512065005870816}
+  - component: {fileID: 1535647909060179771}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -3452,6 +3804,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1535647909060179771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3610399249438208842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &3701873597731033945
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,6 +3828,7 @@ GameObject:
   - component: {fileID: 4609103485833501556}
   - component: {fileID: 584567493593627208}
   - component: {fileID: 4865373503570895123}
+  - component: {fileID: 6400655652365125950}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -3527,6 +3893,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6400655652365125950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701873597731033945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &3873524520351386593
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,6 +3916,7 @@ GameObject:
   - component: {fileID: 4939109009617197097}
   - component: {fileID: 8098121620373115675}
   - component: {fileID: 6898827293818302033}
+  - component: {fileID: 1066967995808644749}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -3602,6 +3981,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1066967995808644749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3873524520351386593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &3891163193762205875
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,6 +4004,7 @@ GameObject:
   - component: {fileID: 2178304540837224638}
   - component: {fileID: 7353508027817917485}
   - component: {fileID: 8233009323151025277}
+  - component: {fileID: 3780467329453595339}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -3677,6 +4069,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3780467329453595339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3891163193762205875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &4046888598986371829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,6 +4092,7 @@ GameObject:
   - component: {fileID: 16732031976531469}
   - component: {fileID: 3851472673947787068}
   - component: {fileID: 7756683367359226266}
+  - component: {fileID: 1757973286867886427}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -3752,6 +4157,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1757973286867886427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4046888598986371829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &4110758772581561321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3840,6 +4257,7 @@ GameObject:
   - component: {fileID: 3684050049905355687}
   - component: {fileID: 231942329610368560}
   - component: {fileID: 6079062118973468854}
+  - component: {fileID: 3528615010752041279}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -3904,6 +4322,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3528615010752041279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187455680233689844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &4304292766093440710
 GameObject:
   m_ObjectHideFlags: 0
@@ -3915,6 +4345,7 @@ GameObject:
   - component: {fileID: 720041461275606957}
   - component: {fileID: 461074522925152409}
   - component: {fileID: 623658910264293143}
+  - component: {fileID: 5482783775492996719}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -3979,6 +4410,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5482783775492996719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4304292766093440710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &4344986720435921658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,6 +4434,7 @@ GameObject:
   - component: {fileID: 9034906854500229414}
   - component: {fileID: 1610768220864672170}
   - component: {fileID: 5391732325752646870}
+  - component: {fileID: 5769050560430045295}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -4054,6 +4499,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5769050560430045295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4344986720435921658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &4394575625763559633
 GameObject:
   m_ObjectHideFlags: 0
@@ -4065,6 +4523,7 @@ GameObject:
   - component: {fileID: 768880335040060235}
   - component: {fileID: 1559482133032999497}
   - component: {fileID: 1988735448684669601}
+  - component: {fileID: 5434303748193651995}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -4129,6 +4588,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5434303748193651995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4394575625763559633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &4405555967550369330
 GameObject:
   m_ObjectHideFlags: 0
@@ -4217,6 +4688,7 @@ GameObject:
   - component: {fileID: 4559318859664952378}
   - component: {fileID: 5091358593458562923}
   - component: {fileID: 8308358875875707503}
+  - component: {fileID: 1142756147346417076}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -4281,6 +4753,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1142756147346417076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501374138084496383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &4527120592342879530
 GameObject:
   m_ObjectHideFlags: 0
@@ -4292,6 +4777,7 @@ GameObject:
   - component: {fileID: 3823743287099119353}
   - component: {fileID: 1234983189210417401}
   - component: {fileID: 7495585239051062504}
+  - component: {fileID: 1587718860583601698}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -4356,6 +4842,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1587718860583601698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527120592342879530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &4541448483660656897
 GameObject:
   m_ObjectHideFlags: 0
@@ -4367,6 +4865,7 @@ GameObject:
   - component: {fileID: 7706101437650339860}
   - component: {fileID: 5113541432008462192}
   - component: {fileID: 1233925843817329947}
+  - component: {fileID: 4040342661591384372}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -4431,6 +4930,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4040342661591384372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541448483660656897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &4628526516283531908
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,6 +5031,7 @@ GameObject:
   - component: {fileID: 2915317841047572075}
   - component: {fileID: 8505260075344299558}
   - component: {fileID: 5445970581633886956}
+  - component: {fileID: 2809781670404747425}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -4583,6 +5096,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2809781670404747425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4677693189439908564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &4710445619339334000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4594,6 +5120,7 @@ GameObject:
   - component: {fileID: 2380414278598198781}
   - component: {fileID: 1269680975517015244}
   - component: {fileID: 2692223586128652461}
+  - component: {fileID: 5980188502637516546}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -4658,6 +5185,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5980188502637516546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710445619339334000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &4822832874324050792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4669,6 +5209,7 @@ GameObject:
   - component: {fileID: 1640063270916577672}
   - component: {fileID: 3701858608971678666}
   - component: {fileID: 2836502410822300432}
+  - component: {fileID: 3716511221941510399}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -4733,6 +5274,93 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3716511221941510399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4822832874324050792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
+--- !u!1 &4971572750596676147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7702935682577559856}
+  - component: {fileID: 5719857256657422851}
+  - component: {fileID: 8477519699379024437}
+  m_Layer: 5
+  m_Name: DragIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7702935682577559856
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971572750596676147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6276593812047872755}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 40, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5719857256657422851
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971572750596676147}
+  m_CullTransparentMesh: 1
+--- !u!114 &8477519699379024437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971572750596676147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &4975533481829528954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,6 +5372,7 @@ GameObject:
   - component: {fileID: 1936892751573693007}
   - component: {fileID: 2995465735120355674}
   - component: {fileID: 3822290095279823411}
+  - component: {fileID: 176915087276954227}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -4808,6 +5437,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &176915087276954227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4975533481829528954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &5048171558517212151
 GameObject:
   m_ObjectHideFlags: 0
@@ -4896,6 +5538,7 @@ GameObject:
   - component: {fileID: 8797346444572679450}
   - component: {fileID: 627085608995712102}
   - component: {fileID: 4481874140798840345}
+  - component: {fileID: 710263479281436069}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -4960,6 +5603,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &710263479281436069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164994479873655025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &5203760049157427534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4971,6 +5627,7 @@ GameObject:
   - component: {fileID: 8069688428091269189}
   - component: {fileID: 4607462838214829595}
   - component: {fileID: 4518711370440579159}
+  - component: {fileID: 8327073575312926832}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -5035,6 +5692,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8327073575312926832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5203760049157427534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &5267277056088891993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5123,6 +5793,7 @@ GameObject:
   - component: {fileID: 3000701525396407838}
   - component: {fileID: 8245487031567000986}
   - component: {fileID: 4655934313886909612}
+  - component: {fileID: 8724093943258161929}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -5187,6 +5858,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8724093943258161929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5522963624857120405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &5565494347007549226
 GameObject:
   m_ObjectHideFlags: 0
@@ -5198,6 +5881,7 @@ GameObject:
   - component: {fileID: 2658250825109567334}
   - component: {fileID: 3693769503492920198}
   - component: {fileID: 375328081378023777}
+  - component: {fileID: 2196530934210493227}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -5262,6 +5946,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2196530934210493227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565494347007549226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &5830005054177710922
 GameObject:
   m_ObjectHideFlags: 0
@@ -5273,6 +5969,7 @@ GameObject:
   - component: {fileID: 5133858906819438575}
   - component: {fileID: 2431120101654241636}
   - component: {fileID: 3414712413109905669}
+  - component: {fileID: 3992136162416781985}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -5337,6 +6034,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3992136162416781985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830005054177710922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &5871594818834398392
 GameObject:
   m_ObjectHideFlags: 0
@@ -5348,6 +6057,7 @@ GameObject:
   - component: {fileID: 3424042734651045407}
   - component: {fileID: 9164623700923853778}
   - component: {fileID: 3106043597045823555}
+  - component: {fileID: 8999646198740994565}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -5412,6 +6122,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8999646198740994565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5871594818834398392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &6126778745038817743
 GameObject:
   m_ObjectHideFlags: 0
@@ -5577,6 +6299,7 @@ GameObject:
   - component: {fileID: 8259255401034578216}
   - component: {fileID: 2095303472079828105}
   - component: {fileID: 704741657435093988}
+  - component: {fileID: 6042432394177950499}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -5641,6 +6364,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6042432394177950499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6587415194653898054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &6597175220906127824
 GameObject:
   m_ObjectHideFlags: 0
@@ -5652,6 +6388,7 @@ GameObject:
   - component: {fileID: 5981080997707418275}
   - component: {fileID: 4969557205359464525}
   - component: {fileID: 1710878006143002557}
+  - component: {fileID: 1838658202306657843}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -5716,6 +6453,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1838658202306657843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597175220906127824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &6607881776567935848
 GameObject:
   m_ObjectHideFlags: 0
@@ -5804,6 +6553,7 @@ GameObject:
   - component: {fileID: 4385371638760544386}
   - component: {fileID: 6913576607376789236}
   - component: {fileID: 1287476601902576276}
+  - component: {fileID: 1784618432238183771}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -5868,6 +6618,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1784618432238183771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6825825606429085721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &6893829066852293357
 GameObject:
   m_ObjectHideFlags: 0
@@ -6033,6 +6796,7 @@ GameObject:
   - component: {fileID: 2404466615676926974}
   - component: {fileID: 4844678508262336727}
   - component: {fileID: 969181866902407454}
+  - component: {fileID: 2202049332539632055}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -6097,6 +6861,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2202049332539632055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6925624240245992683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &7046868865573545027
 GameObject:
   m_ObjectHideFlags: 0
@@ -6108,6 +6885,7 @@ GameObject:
   - component: {fileID: 6498423285418290130}
   - component: {fileID: 8791746040290707982}
   - component: {fileID: 4915833149793356314}
+  - component: {fileID: 7122406942438443802}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -6172,6 +6950,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7122406942438443802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046868865573545027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &7111232950709617506
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,6 +6973,7 @@ GameObject:
   - component: {fileID: 7912257901657669150}
   - component: {fileID: 2027553288814842508}
   - component: {fileID: 4922740145303758158}
+  - component: {fileID: 1447656234722281548}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -6247,6 +7038,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1447656234722281548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7111232950709617506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &7264937995060782963
 GameObject:
   m_ObjectHideFlags: 0
@@ -6258,6 +7061,7 @@ GameObject:
   - component: {fileID: 7641424635823437764}
   - component: {fileID: 1296837725619293177}
   - component: {fileID: 7654809925149278469}
+  - component: {fileID: 1725524152577929026}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -6322,6 +7126,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1725524152577929026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7264937995060782963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &7318811490073210257
 GameObject:
   m_ObjectHideFlags: 0
@@ -6692,6 +7508,7 @@ RectTransform:
   m_Children:
   - {fileID: 8519764040851454}
   - {fileID: 8563348357050942284}
+  - {fileID: 7702935682577559856}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6748,6 +7565,7 @@ GameObject:
   - component: {fileID: 2406398649180512271}
   - component: {fileID: 7514571215848071775}
   - component: {fileID: 9215703888361272375}
+  - component: {fileID: 5864473190086330221}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -6812,6 +7630,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5864473190086330221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7722655105252067386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &7831489036121164262
 GameObject:
   m_ObjectHideFlags: 0
@@ -6900,6 +7731,7 @@ GameObject:
   - component: {fileID: 4293477747757453458}
   - component: {fileID: 4880716413636518557}
   - component: {fileID: 344006668408888372}
+  - component: {fileID: 657163292164285331}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -6964,6 +7796,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &657163292164285331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008912488989066996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &8074213920376217309
 GameObject:
   m_ObjectHideFlags: 0
@@ -6975,6 +7820,7 @@ GameObject:
   - component: {fileID: 4215143902577381284}
   - component: {fileID: 8369578967778455765}
   - component: {fileID: 7865388818613481754}
+  - component: {fileID: 4163654435088974340}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -7039,6 +7885,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4163654435088974340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8074213920376217309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &8076436021816780422
 GameObject:
   m_ObjectHideFlags: 0
@@ -7050,6 +7908,7 @@ GameObject:
   - component: {fileID: 107752657073430040}
   - component: {fileID: 6495930883802421676}
   - component: {fileID: 4108036118031606707}
+  - component: {fileID: 3785419503338635603}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -7114,6 +7973,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3785419503338635603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8076436021816780422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &8185916010933835323
 GameObject:
   m_ObjectHideFlags: 0
@@ -7125,6 +7997,7 @@ GameObject:
   - component: {fileID: 4842423131362578645}
   - component: {fileID: 2667182762062574338}
   - component: {fileID: 7301734244275292700}
+  - component: {fileID: 4097324869718933472}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -7189,6 +8062,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4097324869718933472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8185916010933835323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &8317747435088619593
 GameObject:
   m_ObjectHideFlags: 0
@@ -7200,6 +8086,7 @@ GameObject:
   - component: {fileID: 5379607081898801826}
   - component: {fileID: 8984779903662504839}
   - component: {fileID: 386499588547473584}
+  - component: {fileID: 5619096899261908807}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -7264,6 +8151,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5619096899261908807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8317747435088619593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &8348773147820109378
 GameObject:
   m_ObjectHideFlags: 0
@@ -7275,6 +8175,7 @@ GameObject:
   - component: {fileID: 7570244631067378253}
   - component: {fileID: 304766801920184369}
   - component: {fileID: 4148791979794678534}
+  - component: {fileID: 633159864916886349}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -7339,6 +8240,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &633159864916886349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8348773147820109378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &8503599976391822835
 GameObject:
   m_ObjectHideFlags: 0
@@ -7581,6 +8495,7 @@ GameObject:
   - component: {fileID: 2278026335419670505}
   - component: {fileID: 652737002673473816}
   - component: {fileID: 1051547488245210418}
+  - component: {fileID: 7337470097673358636}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -7645,6 +8560,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7337470097673358636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8652482502615046257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &8924332908880731349
 GameObject:
   m_ObjectHideFlags: 0
@@ -7733,6 +8661,7 @@ GameObject:
   - component: {fileID: 8935224019587850978}
   - component: {fileID: 7289447267161265633}
   - component: {fileID: 7403904004201486385}
+  - component: {fileID: 334727351249944982}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -7797,6 +8726,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &334727351249944982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8941523910203536053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &9105701097229209599
 GameObject:
   m_ObjectHideFlags: 0
@@ -7808,6 +8750,7 @@ GameObject:
   - component: {fileID: 6225939964328104203}
   - component: {fileID: 3455482416146788421}
   - component: {fileID: 8598986178453474486}
+  - component: {fileID: 7438491757864382873}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -7872,6 +8815,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7438491757864382873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105701097229209599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &9140720264699475770
 GameObject:
   m_ObjectHideFlags: 0
@@ -7960,6 +8915,7 @@ GameObject:
   - component: {fileID: 4996139118808477945}
   - component: {fileID: 3014131303095360130}
   - component: {fileID: 3462281071851213898}
+  - component: {fileID: 2775479083743962412}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -8024,6 +8980,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2775479083743962412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9151567294367564552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop
 --- !u!1 &9171351782361533431
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,6 +9003,7 @@ GameObject:
   - component: {fileID: 8461103472301674716}
   - component: {fileID: 4369153211251715170}
   - component: {fileID: 5705451325058213769}
+  - component: {fileID: 3569026763240329527}
   m_Layer: 5
   m_Name: Spell
   m_TagString: Untagged
@@ -8099,6 +9068,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3569026763240329527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9171351782361533431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2476ac971fe6b641bc1bcdbba05c821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drag
+  dragIcon: {fileID: 8477519699379024437}
 --- !u!1 &9172637031425272778
 GameObject:
   m_ObjectHideFlags: 0
@@ -8110,6 +9092,7 @@ GameObject:
   - component: {fileID: 7741855098683692399}
   - component: {fileID: 1367491563948772347}
   - component: {fileID: 7591989296130095011}
+  - component: {fileID: 510558107543123044}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -8174,3 +9157,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &510558107543123044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172637031425272778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35b032ad10e1f4aabedd8c04646471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drop

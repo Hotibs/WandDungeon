@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class SpellInventory : MonoBehaviour
 {
-    [SerializeField] List<SpellData> spellDatas;
+    [SerializeField] public List<SpellData> spellDatas;
 
     Image[] icons;
 
 
-    private void Start()
+    
+    private void OnEnable()
     {
         icons = new Image[transform.childCount];
         UpdateInventory();
@@ -25,7 +26,8 @@ public class SpellInventory : MonoBehaviour
             icons[i] = slot.GetComponent<Image>();
             if (i >= spellDatas.Count)
             {
-                icons[i].color = Color.white;
+                icons[i].color = Color.white; // 이거 비활
+                icons[i].enabled = false;
                 continue;
             }
             icons[i].sprite = (spellDatas[i].Spriteicon);

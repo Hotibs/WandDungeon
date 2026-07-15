@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class SpellSlot : MonoBehaviour
 {
     [SerializeField] WandData wandData;
-    SpellData[] spells;
+    public SpellData[] spells;
 
     Image[] icons;
 
-    private void Start()
+    private void OnEnable()
     {
         icons = new Image[wandData.SlotCount];
         spells = new SpellData[wandData.SlotCount];
@@ -34,7 +34,8 @@ public class SpellSlot : MonoBehaviour
             if (spells[i]==null)
             {
                 icons[i].sprite = null;
-                icons[i].color = Color.white;
+                icons[i].color = Color.white; //이거 비활
+                icons[i].enabled = false;
             }
             else
             {
@@ -47,6 +48,13 @@ public class SpellSlot : MonoBehaviour
     {
         spells[slotCnt] = spell;
         UpdateSlotIcon();
+    }
+    public void ChangeSpell(int currentSlot,int prevSlot,SpellData spell)
+    {
+        SpellData sd;
+        sd = spells[currentSlot];
+        spells[currentSlot] = spells[prevSlot];
+        spells[prevSlot] = sd;
     }
 
     public void ClearSpell()
