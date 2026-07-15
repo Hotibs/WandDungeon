@@ -1375,6 +1375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 467628858}
   - component: {fileID: 467628859}
+  - component: {fileID: 467628860}
   m_Layer: 8
   m_Name: Wand
   m_TagString: Untagged
@@ -1456,6 +1457,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &467628860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467628857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ab8c963dc6d2f4b94aec9d8351f008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wand
+  data: {fileID: 11400000, guid: 5a752e69dfb3f0c48afe96c297738f45, type: 2}
 --- !u!1 &499486646
 GameObject:
   m_ObjectHideFlags: 0
