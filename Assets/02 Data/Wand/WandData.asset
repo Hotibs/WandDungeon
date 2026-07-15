@@ -15,6 +15,6 @@ MonoBehaviour:
   wandName: BasicWand
   slotCount: 3
   castDelay: 0.4
-  rechargeTime: 0.8
+  rechargeTime: 1
   maxMana: 100
   manaRegen: 10

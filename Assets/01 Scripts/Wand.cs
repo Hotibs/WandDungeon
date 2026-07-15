@@ -41,7 +41,7 @@ public class Wand : MonoBehaviour
     {
         LookMouse();
         castTimer -= Time.deltaTime;
-        rechargeTimer -= Time.deltaTime;
+        if (currentSlot >= slotCount) rechargeTimer -= Time.deltaTime;
         if (Mouse.current.leftButton.isPressed)
         {
                 TryCast();
@@ -50,19 +50,27 @@ public class Wand : MonoBehaviour
 
     void TryCast()
     {
-        if (castTimer > 0) return;
+        if (castTimer > 0)
+        {
+            return;
+        }
 
         if (currentSlot >= slotCount)
         {
-            if (rechargeTimer > 0) return;
-
+            if (rechargeTimer > 0)
+            {
+                return;
+            }
             currentSlot = 0;
-            rechargeTimer = rechargeTime;
         }
-        
         Spell(currentSlot);
         currentSlot++;
         castTimer = castDelay;
+
+        if (currentSlot >= slotCount)
+        {
+            rechargeTimer = rechargeTime;
+        }
     }
 
     void Spell(int slotSpell)

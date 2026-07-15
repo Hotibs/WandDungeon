@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56adb4a896aaf6b4eb7abad137eb21a3, type: 3}
+  m_Name: FireArrow
+  m_EditorClassIdentifier: Assembly-CSharp::AttackSpellData
+  spellName: FireArrow
+  icon: {fileID: 21300000, guid: 1256677bf05de6440b8bc89cfad5019e, type: 3}
+  tier: 1
+  dropPer: 1
+  damage: 10
+  speed: 5
+  lifeTime: 5
+  projectile: {fileID: 2103368047842277960, guid: 08343882b7e18c14a863cf77124a079c, type: 3}
