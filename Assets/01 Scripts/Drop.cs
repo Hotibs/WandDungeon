@@ -29,12 +29,10 @@ public class Drop : MonoBehaviour, IDropHandler
         if (spellInventory != null)
         {
             Drag.dropType = DragType.Inventory;
-            Debug.Log("invendrop");
         }
         else
         {
             Drag.dropType = DragType.Wand;
-            Debug.Log("wanddrop");
         }
 
         if (Drag.dragType == DragType.Inventory)
@@ -57,6 +55,5 @@ public class Drop : MonoBehaviour, IDropHandler
             }
         }
         
-            Debug.Log("드랍당함 ");
     }
 }

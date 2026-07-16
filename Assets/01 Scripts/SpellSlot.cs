@@ -7,9 +7,12 @@ public class SpellSlot : MonoBehaviour
     [SerializeField] WandData wandData;
     public SpellData[] spells;
 
+    SlotManager slotManager;
+
     Image[] icons;
     private void Start()
     {
+        slotManager = SlotManager.Instance;
         spells = new SpellData[wandData.SlotCount];
         UpdateSlotIcon();
     }
@@ -46,6 +49,7 @@ public class SpellSlot : MonoBehaviour
                 icons[i].sprite = spells[i].Spriteicon;
             }
         }
+        slotManager.GetSlot(spells);
     }
 
     public void SetSpell(int slotCnt,SpellData spell)

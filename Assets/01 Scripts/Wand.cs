@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class Wand : MonoBehaviour
 {
     [SerializeField] WandData data;
+    [SerializeField] SpellCaster spellCaster;
     Camera camera;
 
     string wandName;
@@ -75,7 +76,7 @@ public class Wand : MonoBehaviour
 
     void Spell(int slotSpell)
     {
-
+        spellCaster.Cast(slotSpell);
     }
 
     Vector2 MousePos()
