@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +10,6 @@ public class SpellInventory : MonoBehaviour
     Image[] icons;
 
 
-    
     private void OnEnable()
     {
         icons = new Image[transform.childCount];
@@ -21,31 +19,31 @@ public class SpellInventory : MonoBehaviour
     {
         for (int i = 0; i < transform.childCount; i++)
         {
+            
             Transform slot = transform.GetChild(i).GetChild(1);
 
             icons[i] = slot.GetComponent<Image>();
+            icons[i].color = Color.white;
+            icons[i].enabled = true;
             if (i >= spellDatas.Count)
             {
-                icons[i].color = Color.white; // 이거 비활
+                icons[i].color = Color.white;
                 icons[i].enabled = false;
                 continue;
             }
             icons[i].sprite = (spellDatas[i].Spriteicon);
         }
     }
-    public void EquipSpell(SpellData spell)
-    {
-        spellDatas.Remove(spell);
-        //SpellSlot에게 데이터 줘야됨
-    }
-
+    
     public void AddSpell(SpellData spell)
     {
         spellDatas.Add(spell);
+        UpdateInventory();
     }
-    void DestorySpell(SpellData spell) 
+    public void DestorySpell(SpellData spell) 
     {
         spellDatas.Remove(spell);
+        UpdateInventory();
     }
 
 

@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 
@@ -9,12 +8,16 @@ public class SpellSlot : MonoBehaviour
     public SpellData[] spells;
 
     Image[] icons;
-
+    private void Start()
+    {
+        spells = new SpellData[wandData.SlotCount];
+        UpdateSlotIcon();
+    }
     private void OnEnable()
     {
         icons = new Image[wandData.SlotCount];
-        spells = new SpellData[wandData.SlotCount];
-        UpdateSlotIcon();
+        
+        
     }
     void UpdateSlotEnable()
     {
@@ -34,11 +37,12 @@ public class SpellSlot : MonoBehaviour
             if (spells[i]==null)
             {
                 icons[i].sprite = null;
-                icons[i].color = Color.white; //이거 비활
+                icons[i].color = Color.white; 
                 icons[i].enabled = false;
             }
             else
             {
+                icons[i].enabled = true;
                 icons[i].sprite = spells[i].Spriteicon;
             }
         }
@@ -49,12 +53,20 @@ public class SpellSlot : MonoBehaviour
         spells[slotCnt] = spell;
         UpdateSlotIcon();
     }
-    public void ChangeSpell(int currentSlot,int prevSlot,SpellData spell)
+    public void ChangeSpell(int targetSlot,int startSlot)
     {
         SpellData sd;
-        sd = spells[currentSlot];
-        spells[currentSlot] = spells[prevSlot];
-        spells[prevSlot] = sd;
+        if (spells[targetSlot] == null)
+        {
+            spells[targetSlot] = spells[startSlot];
+            spells[startSlot] = null;
+            UpdateSlotIcon();
+            return;
+        }
+        sd = spells[targetSlot];
+        spells[targetSlot] = spells[startSlot];
+        spells[startSlot] = sd;
+        UpdateSlotIcon();
     }
 
     public void ClearSpell()

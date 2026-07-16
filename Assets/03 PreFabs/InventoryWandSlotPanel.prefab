@@ -3155,7 +3155,7 @@ GameObject:
   - component: {fileID: 5243206407396067744}
   - component: {fileID: 1845382533935326649}
   - component: {fileID: 9050208829370557152}
-  - component: {fileID: 800487834209326178}
+  - component: {fileID: 2813927314011702129}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -3220,7 +3220,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &800487834209326178
+--- !u!114 &2813927314011702129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3916,7 +3916,7 @@ GameObject:
   - component: {fileID: 4939109009617197097}
   - component: {fileID: 8098121620373115675}
   - component: {fileID: 6898827293818302033}
-  - component: {fileID: 1066967995808644749}
+  - component: {fileID: 828871243311976286}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -3981,7 +3981,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1066967995808644749
+--- !u!114 &828871243311976286
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5320,7 +5320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -280, y: 145}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5719857256657422851
@@ -5345,7 +5345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.6}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

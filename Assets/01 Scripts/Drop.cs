@@ -1,30 +1,62 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
+
 public class Drop : MonoBehaviour, IDropHandler
 {
-    SlotType slotType;
-
+    
     SpellInventory spellInventory;
     SpellSlot spellSlot;
 
-    DragType dropType;
+    int slotIndex;
+
+    public static SpellData spell;
+
     private void Awake()
     {
         spellInventory = GetComponentInParent<SpellInventory>();
         spellSlot = GetComponentInParent<SpellSlot>();
-        dropType = Drag.dropType;
+        slotIndex = transform.parent.GetSiblingIndex();
     }
+
+    
     public void OnDrop(PointerEventData eventData)
     {
+        
+        spell = spellSlot.spells[slotIndex];
+        
+        
         if (spellInventory != null)
         {
-            dropType = DragType.Inventory;
+            Drag.dropType = DragType.Inventory;
+            Debug.Log("invendrop");
         }
         else
         {
-            dropType = DragType.Wand;
+            Drag.dropType = DragType.Wand;
+            Debug.Log("wanddrop");
         }
-        Debug.Log("드랍당함 ");
+
+        if (Drag.dragType == DragType.Inventory)
+        {
+            if (Drag.dropType == DragType.Wand)
+            {
+                spellSlot.SetSpell(slotIndex, Drag.spellData);
+                
+            }
+        }
+        else if(Drag.dragType == DragType.Wand)
+        {
+            if(Drag.dropType == DragType.Inventory)
+            {
+                spellInventory.AddSpell(Drag.spellData);
+            }
+            else
+            {
+                Drag.endPos = slotIndex;
+            }
+        }
+        
+            Debug.Log("드랍당함 ");
     }
 }
