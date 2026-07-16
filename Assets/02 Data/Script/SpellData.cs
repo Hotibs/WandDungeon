@@ -1,16 +1,17 @@
-﻿using UnityEditor.Rendering.Universal;
-using UnityEngine;
+﻿using UnityEngine;
 
-enum UpgradeType
+public enum UpgradeType
 {
+    None,
     Damage,
     CastDelay,
     Mana,
     ManaRegen
 }
 
-enum SpecialType
+public enum SpecialType
 {
+    None,
     Bounce,
     Piercing,
     Homing,
@@ -24,4 +25,11 @@ public class SpellData : ScriptableObject
     [SerializeField] Sprite icon;
     [SerializeField] int tier;
     [SerializeField] float dropPer;
+
+
+    public string SpellName => spellName;
+    public Sprite Spriteicon => icon;
+    public int Tier => tier;
+    public float DropPer => dropPer;
+
 }

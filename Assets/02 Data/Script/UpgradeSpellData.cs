@@ -5,4 +5,7 @@ public class UpgradeSpellData : SpellData
 {
     [SerializeField] UpgradeType upgradeType;
     [SerializeField] float value;
+
+    public UpgradeType UpgradeType => upgradeType;
+    public float Value => value;
 }

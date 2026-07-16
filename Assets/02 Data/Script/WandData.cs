@@ -11,9 +11,19 @@ public class WandData : ScriptableObject
 
     [SerializeField] float rechargeTime;
 
-    [SerializeField] int maxMana;
+    [SerializeField] float maxMana;
 
     [SerializeField] float manaRegen;
 
-    [SerializeField] int castCount;
+    
+
+
+    public string WandName => wandName;
+    public int SlotCount => slotCount;
+    public float CastDelay => castDelay;
+    public float RechargeTime => rechargeTime;
+    public float MaxMana => maxMana;
+    public float ManaRegen => manaRegen;
+    
+
 }
