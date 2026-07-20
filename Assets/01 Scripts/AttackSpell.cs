@@ -22,9 +22,6 @@ public class AttackSpell : MonoBehaviour
 
     private void Start()
     {
-       
-
-        
         damage = data.Damage;
         speed = data.Speed;
         lifeTime = data.LifeTime;
@@ -53,15 +50,19 @@ public class AttackSpell : MonoBehaviour
 
     void ReturnPool()
     {
-        Debug.Log(data.SpellName);
-        ObjectPoolManager.instance.ReturnObject(data.SpellName, this.gameObject);
+        ProjectileObjectPoolManager.instance.ReturnObject(data.SpellName, this.gameObject);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Monster") ||
-            collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             ReturnPool();
         }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Monster")) 
+        {
+            ReturnPool();
+            collision.gameObject.GetComponent<MonsterController>().TakeDamage(damage);
+        }
+
     }
 }

@@ -191,6 +191,8 @@ public class MapManager : MonoBehaviour
             
         mapState[currentMapPos.x, currentMapPos.y] = 2;
 
+        ProjectileObjectPoolManager.instance.ResetPool();
+
     }
 
     void PositionPlayer()

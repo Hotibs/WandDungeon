@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4065971071591220053}
   - component: {fileID: 6695007317198948872}
   - component: {fileID: 7119086312416421388}
-  m_Layer: 0
+  - component: {fileID: 9117074847346304848}
+  m_Layer: 12
   m_Name: WaterBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 26fc25ea62f76bc499f6e382969ddee8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.1333334, y: 2.1333334}
@@ -164,3 +165,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1abbaa3db7abd4d9147931cee00ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackSpell
+  data: {fileID: 11400000, guid: c2a2db45c5bbf9c45998555dc2cf5167, type: 2}
+--- !u!50 &9117074847346304848
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6957448094717424854}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
