@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77a78f011cb1f6469f6a0577f6e4cef, type: 3}
   m_Name: Bounce
   m_EditorClassIdentifier: Assembly-CSharp::SpecialSpellData
+  type: 2
   spellName: 
-  icon: {fileID: 0}
+  icon: {fileID: 3778404753746887981, guid: a210986d6f7556d40867c76ef6a46348, type: 3}
   tier: 0
   dropPer: 0
-  specialType: 0
+  specialType: 1
   value: 0

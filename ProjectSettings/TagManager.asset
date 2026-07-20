@@ -17,8 +17,8 @@ TagManager:
   - Spell
   - Monster
   - MonsterProjectile
-  - 
-  - 
+  - Projectile
+  - Wall
   - 
   - 
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1624035543
+    locked: 0
+  - name: Projectile
+    uniqueID: 3692148871
     locked: 0
   m_RenderingLayers:
   - Default

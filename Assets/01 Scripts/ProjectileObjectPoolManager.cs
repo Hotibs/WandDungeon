@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPoolManager : MonoBehaviour
+public class ProjectileObjectPoolManager : MonoBehaviour
 {
-    public static ObjectPoolManager instance;
+    public static ProjectileObjectPoolManager instance;
 
 
-    Dictionary<string,Queue<GameObject>> pools = new Dictionary<string,Queue<GameObject>>();
+    Dictionary<string, Queue<GameObject>> pools = new Dictionary<string, Queue<GameObject>>();
     [SerializeField] List<GameObject> objList;
     private int poolSize;
 
@@ -27,7 +27,7 @@ public class ObjectPoolManager : MonoBehaviour
 
     void Start()
     {
-        poolSize = 10;
+        poolSize = 100;
         foreach (GameObject obj in objList)
         {
             pools[obj.name] = new Queue<GameObject>();
@@ -54,11 +54,7 @@ public class ObjectPoolManager : MonoBehaviour
             go.SetActive(true);
             return go;
         }
-        else
-        {
-            GameObject go = Instantiate(objList.Find(obj=>obj.name == name),parentPool.transform);
-            return go;
-        }
+        return null;
     }
 
     public void ReturnObject(string name, GameObject go)
@@ -71,5 +67,22 @@ public class ObjectPoolManager : MonoBehaviour
         go.SetActive(false);
         pools[name].Enqueue(go);
     }
-    
+
+    public void ResetPool()
+    {
+        foreach (Transform pool in transform)
+        {
+            string key = pool.name.Replace("_Object_Pool", "");
+
+            foreach (Transform child in pool)
+            {
+                GameObject go = child.gameObject;
+
+                if (go.activeSelf)
+                {
+                    ReturnObject(key, go);
+                }
+            }
+        }
+    }
 }

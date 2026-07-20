@@ -83,14 +83,11 @@ public class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
             dragIcon.sprite = spellData.Spriteicon;
             dragIcon.enabled = true;
         }
-        Debug.Log("드래그 시작");
-        Debug.Log(spellData);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         dragIcon.transform.position = eventData.position;
-        Debug.Log("드래그 중");
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -101,7 +98,6 @@ public class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
             if (dropType == DragType.Inventory)
             {
                 transform.position = saveInvenPos;
-                Debug.Log("인벤 to 인벤 ");
             }
             else if (dropType == DragType.Wand)
             {
@@ -110,7 +106,6 @@ public class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
                 {
                     spellInventory.AddSpell(Drop.spell);
                 }
-                Debug.Log("인벤 to 완드 ");
             }
         }
         else
@@ -119,19 +114,14 @@ public class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
             {
                 spellSlot.UnequipSpell(transform.parent.GetSiblingIndex());
                 
-                //스펠 해제
-                Debug.Log("완드 to 인벤 ");
             }
             else if(dropType == DragType.Wand) 
             {
                 spellSlot.ChangeSpell(endPos,transform.parent.GetSiblingIndex());
-                // 순서변경
-                Debug.Log("완드 to 완드 ");
             }
         }
 
         Reset();
-        Debug.Log("드래그 끝");
     }
     void Reset()
     {

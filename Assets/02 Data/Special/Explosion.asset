@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77a78f011cb1f6469f6a0577f6e4cef, type: 3}
   m_Name: Explosion
   m_EditorClassIdentifier: Assembly-CSharp::SpecialSpellData
+  type: 2
   spellName: 
-  icon: {fileID: 0}
+  icon: {fileID: 5986030973748356752, guid: a3431127a27db15429e7531c34cd4ad9, type: 3}
   tier: 0
   dropPer: 0
-  specialType: 3
-  value: 0
+  specialType: 4
+  value: 100

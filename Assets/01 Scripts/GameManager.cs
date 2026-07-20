@@ -1,16 +1,28 @@
-using UnityEngine;
+﻿using UnityEngine;
+
+enum GameState
+{
+    None,
+    GameStart,
+    GamePause,
+    GameOver,
+    GameClear
+}
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public static GameManager instance;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
     }
 }
