@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b77a78f011cb1f6469f6a0577f6e4cef, type: 3}
-  m_Name: Homing
+  m_Name: Double
   m_EditorClassIdentifier: Assembly-CSharp::SpecialSpellData
   type: 2
   spellName: 
-  icon: {fileID: 9136574636451808338, guid: 4cdd1a93c7b9fe346864594bdb827c36, type: 3}
+  icon: {fileID: 4574894833254105179, guid: dad4e4234223af54c850f64123ae67e2, type: 3}
   tier: 0
   dropPer: 0
-  specialType: 3
+  specialType: 5
   value: 0

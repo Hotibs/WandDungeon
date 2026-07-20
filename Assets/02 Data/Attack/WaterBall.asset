@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56adb4a896aaf6b4eb7abad137eb21a3, type: 3}
   m_Name: WaterBall
   m_EditorClassIdentifier: Assembly-CSharp::AttackSpellData
+  type: 1
   spellName: WaterBall
   icon: {fileID: 21300000, guid: e99aa1b6a5ce3c14ba85364db284ea4c, type: 3}
   tier: 1

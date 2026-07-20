@@ -5,9 +5,12 @@ public class AttackSpell : MonoBehaviour
 {
     public AttackSpellData data;
 
+    SpecialSpell specialSpell;
+
+    SpecialType type;
     
     float damage;
-    float speed;
+    public float speed;
     float lifeTime;
     GameObject projectile;
 
@@ -25,11 +28,22 @@ public class AttackSpell : MonoBehaviour
         damage = data.Damage;
         speed = data.Speed;
         lifeTime = data.LifeTime;
+        
+        specialSpell = GetComponent<SpecialSpell>();
+        if (specialSpell != null)
+        {
+            type = specialSpell.Type;
+        }
+        else
+        {
+            type = SpecialType.None;
+        }
 
         cd = GetComponent<Collider2D>();
     }
     private void OnEnable()
     {
+        speed = data.Speed;
         timer = 0f;
     }
     void Update()
@@ -38,10 +52,15 @@ public class AttackSpell : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        
+        Move();
+    }
+
+    private void Move()
+    {
         timer += Time.deltaTime;
         transform.position += speed * Time.deltaTime * transform.right;
     }
-    
 
     public void Damage(float dmg)
     {
@@ -50,7 +69,10 @@ public class AttackSpell : MonoBehaviour
 
     void ReturnPool()
     {
-        ProjectileObjectPoolManager.instance.ReturnObject(data.SpellName, this.gameObject);
+        if (specialSpell!=null)
+            specialSpell.ReturnPool();
+        else
+            ProjectileObjectPoolManager.instance.ReturnObject(data.SpellName, this.gameObject);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

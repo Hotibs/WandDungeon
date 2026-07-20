@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77a78f011cb1f6469f6a0577f6e4cef, type: 3}
   m_Name: Piercing
   m_EditorClassIdentifier: Assembly-CSharp::SpecialSpellData
+  type: 2
   spellName: 
-  icon: {fileID: 0}
+  icon: {fileID: 1402521786453538064, guid: d17c3b8dc2f27fa48aa61d6173e00859, type: 3}
   tier: 0
   dropPer: 0
-  specialType: 1
+  specialType: 2
   value: 0
