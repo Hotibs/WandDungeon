@@ -59,6 +59,10 @@ public class AttackSpell : MonoBehaviour
         timer += Time.deltaTime;
         if (specialSpell != null && specialSpell.Type == SpecialType.Homing)
         {
+            if (specialSpell.target == null)
+            {
+                Move();
+            }
             transform.position = Vector3.MoveTowards(transform.position, specialSpell.target.position, speed * Time.deltaTime);
             Vector2 dir = specialSpell.target.position - transform.position;
             float angle = Mathf.Atan2(dir.y, dir.x)*Mathf.Rad2Deg;
