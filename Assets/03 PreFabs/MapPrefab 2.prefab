@@ -4138,7 +4138,7 @@ GameObject:
   - component: {fileID: 6201721271353778365}
   m_Layer: 13
   m_Name: WallTilemap
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

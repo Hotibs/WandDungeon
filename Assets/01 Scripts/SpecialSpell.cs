@@ -9,6 +9,7 @@ public class SpecialSpell : MonoBehaviour
 
     Collider2D cd;
     CircleCollider2D ccd;
+    BoxCollider2D bcd;
     SpecialType type;
 
     AttackSpell attackSpell;
@@ -18,7 +19,7 @@ public class SpecialSpell : MonoBehaviour
     bool isBounce = false;
     bool isExplosion = false;
 
-    Transform target;
+    public Transform target;
 
     public void Init(SpecialSpellData spellData)
     {
@@ -29,16 +30,36 @@ public class SpecialSpell : MonoBehaviour
     {
         cd = GetComponent<Collider2D>();
         ccd = GetComponent<CircleCollider2D>();
+        bcd = GetComponent<BoxCollider2D>();
         attackSpell = GetComponent<AttackSpell>();
         
     }
     private void Start()
     {
         type = data.SpecialType;
+        switch (type)
+        {
+            case SpecialType.None:
+                break;
+            case SpecialType.Bounce:
+                Bounce();
+                break;
+            case SpecialType.Piercing:
+                Piercing();
+                break;
+            case SpecialType.Explosion:
+                Explosion();
+                break;
+            case SpecialType.Homing:
+                Homing();
+                break;
+            default:
+                break;
+        }
     }
 
     public SpecialType Type => type;
-
+    
     void Bounce()
     {
         isBounce = true;
@@ -56,7 +77,7 @@ public class SpecialSpell : MonoBehaviour
     }
     void Homing()
     {
-        
+        DetectEnemy();
     }
     
     void PrevCast()
@@ -87,16 +108,30 @@ public class SpecialSpell : MonoBehaviour
 
     IEnumerator ScaleUp()
     {
+        Collider2D[] hits = null ;
         speed = 0f;
-        while (true)
+        if (ccd != null)
         {
-            transform.localScale *= 1.05f;
-            ccd.radius += 0.05f;
-            if (ccd.radius >= 2f) break;
-            yield return null;
+            while (true)
+            {
+                transform.localScale *= 1.05f;
+                ccd.radius += 0.05f;
+                if (ccd.radius >= 2f) break;
+                yield return null;
+            }
+            hits = Physics2D.OverlapCircleAll(transform.position, ccd.radius, 1 << LayerMask.NameToLayer("Monster"));
         }
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position,ccd.radius,1<<LayerMask.NameToLayer("Monster"));
-
+        else
+        {
+            while (true)
+            {
+                transform.localScale *= 1.05f;
+                bcd.size *= new Vector2(1.05f,1.05f);
+                if (bcd.size.x >= 2f) break;
+                yield return null;
+            }
+            hits = Physics2D.OverlapBoxAll(transform.position, bcd.size, transform.eulerAngles.z, 1 << LayerMask.NameToLayer("Monster"));
+        }
         foreach (Collider2D hit in hits)
         {
             hit.GetComponent<MonsterController>().TakeDamage(data.Value);
@@ -104,8 +139,7 @@ public class SpecialSpell : MonoBehaviour
 
         ReturnPool();
     }
-
-
+    
     public void ReturnPool()
     {
         ProjectileObjectPoolManager.instance.ReturnObject(data.SpellName, this.gameObject);
@@ -118,20 +152,35 @@ public class SpecialSpell : MonoBehaviour
         if (isExplosion)
         {
             StartCoroutine(ScaleUp());
+            return;
         }
-        if (isBounce)
-        {
-            transform.rotation *= Quaternion.Euler(0, 0, 180);
-            isBounce = false;
-        }
-        if(collision.gameObject.layer == LayerMask.NameToLayer("Wall")&&!isBounce)
+        if (collision.gameObject.CompareTag("Wall"))
         {
             ReturnPool();
         }
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Monster")){
-            collision.gameObject.GetComponent<MonsterController>().TakeDamage(dmg);
+        if (collision.gameObject.CompareTag("Monster")){
+            MonsterController monster = collision.gameObject.GetComponent<MonsterController>();
+            collision.gameObject.GetComponent<MonsterController>().TakeDamage(attackSpell.damage);
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall") && !isBounce)
+        {
+            ReturnPool();
+        }
+        if (isBounce)
+        {
+            Vector2 reflect = Vector2.Reflect(transform.right,collision.contacts[0].normal);
+            transform.right = reflect;
+        }
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Monster"))
+        {
+            collision.gameObject.GetComponent<MonsterController>().TakeDamage(attackSpell.damage);
+            ReturnPool();
+        }
+    }
 
 }

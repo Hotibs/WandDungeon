@@ -14,10 +14,15 @@ public class MonsterController : MonoBehaviour
 
     SpriteRenderer sr;
 
+    int dropGold;
+    int dropExp;
+
     public event Action OnDead;
 
     private void Start()
     {
+        dropGold = 5;
+        dropExp = 5;
         moveSpeed = 2f;
         range = 2f;
         sr = GetComponent<SpriteRenderer>();
@@ -92,6 +97,8 @@ public class MonsterController : MonoBehaviour
 
     void Die()
     {
+        PlayerManager.instance.GetGold(dropGold);
+        PlayerManager.instance.GetExp(dropExp);
         OnDead?.Invoke();
         ObjectPoolManager.instance.ReturnObject("Monster",this.gameObject);
 

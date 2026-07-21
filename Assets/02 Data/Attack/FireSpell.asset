@@ -19,5 +19,5 @@ MonoBehaviour:
   dropPer: 1
   damage: 15
   speed: 3
-  lifeTime: 2
+  lifeTime: 5
   projectile: {fileID: 4895823889038109369, guid: 6c35b4ffa094120439dd14b089f12bf0, type: 3}

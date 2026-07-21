@@ -151,7 +151,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.4027637, y: -0.0038115978}
+  m_Offset: {x: 0.39051294, y: -0.0038115978}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -161,7 +161,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0674179, y: 0.65755033}
+  m_Size: {x: 1.0799897, y: 0.65755033}
   m_EdgeRadius: 0
 --- !u!114 &-8866523720070264287
 MonoBehaviour:
@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackSpell
   data: {fileID: 11400000, guid: c0407fdfb2a23f34cbcfe756c2ffe6bb, type: 2}
+  speed: 0
 --- !u!50 &-783995691038657257
 Rigidbody2D:
   serializedVersion: 5

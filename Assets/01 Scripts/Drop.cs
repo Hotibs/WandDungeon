@@ -23,7 +23,7 @@ public class Drop : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         
-        spell = spellSlot.spells[slotIndex];
+        
         
         
         if (spellInventory != null)
@@ -34,7 +34,8 @@ public class Drop : MonoBehaviour, IDropHandler
         {
             Drag.dropType = DragType.Wand;
         }
-
+        if(Drag.dropType == DragType.Wand)spell = spellSlot.spells[slotIndex];
+        
         if (Drag.dragType == DragType.Inventory)
         {
             if (Drag.dropType == DragType.Wand)

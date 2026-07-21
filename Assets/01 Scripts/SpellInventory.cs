@@ -8,8 +8,12 @@ public class SpellInventory : MonoBehaviour
     [SerializeField] public List<SpellData> spellDatas;
 
     Image[] icons;
+    SlotManager slotManager;
 
-
+    private void Start()
+    {
+        slotManager = SlotManager.Instance;
+    }
     private void OnEnable()
     {
         icons = new Image[transform.childCount];
@@ -33,6 +37,7 @@ public class SpellInventory : MonoBehaviour
             }
             icons[i].sprite = (spellDatas[i].Spriteicon);
         }
+        slotManager.GetInven(spellDatas);
     }
     
     public void AddSpell(SpellData spell)
