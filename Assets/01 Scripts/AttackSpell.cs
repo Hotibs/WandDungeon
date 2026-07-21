@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.GraphicsBuffer;
 
 public class AttackSpell : MonoBehaviour
 {
@@ -9,7 +11,7 @@ public class AttackSpell : MonoBehaviour
 
     SpecialType type;
     
-    float damage;
+    public float damage;
     public float speed;
     float lifeTime;
     GameObject projectile;
@@ -17,6 +19,8 @@ public class AttackSpell : MonoBehaviour
     float timer;
 
     Collider2D cd;
+
+    bool isHit = false;
 
     public void Init(AttackSpellData spellData)
     {
@@ -52,13 +56,23 @@ public class AttackSpell : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        
-        Move();
+        timer += Time.deltaTime;
+        if (specialSpell != null && specialSpell.Type == SpecialType.Homing)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, specialSpell.target.position, speed * Time.deltaTime);
+            Vector2 dir = specialSpell.target.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x)*Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0,0,angle);
+
+        }
+        else
+        {
+            Move();
+        }
     }
 
     private void Move()
     {
-        timer += Time.deltaTime;
         transform.position += speed * Time.deltaTime * transform.right;
     }
 
@@ -76,15 +90,21 @@ public class AttackSpell : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(specialSpell != null)
+        {
+            return;
+        }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             ReturnPool();
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Monster")) 
         {
-            ReturnPool();
+            if (isHit) return;
+            isHit = true;
             collision.gameObject.GetComponent<MonsterController>().TakeDamage(damage);
+            ReturnPool();
         }
-
     }
+    
 }
