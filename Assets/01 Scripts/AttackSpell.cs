@@ -85,16 +85,13 @@ public class AttackSpell : MonoBehaviour
         damage = dmg;
     }
 
-    void ReturnPool()
+    public void ReturnPool()
     {
-        if (specialSpell!=null)
-            specialSpell.ReturnPool();
-        else
-            ProjectileObjectPoolManager.instance.ReturnObject(data.SpellName, this.gameObject);
+        ProjectileObjectPoolManager.instance.ReturnObject(data.SpellName, this.gameObject);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(specialSpell != null)
+        if(specialSpell != null && specialSpell.data.SpecialType != SpecialType.Bounce)
         {
             return;
         }

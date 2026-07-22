@@ -9,7 +9,11 @@ public class InventoryUIController : MonoBehaviour
     GameObject inventoryPanel;
 
     bool isOpen = false;
-
+    private void Start()
+    {
+        inventoryPanel = Instantiate(inventoryPrefab, UICanvas.transform);
+        inventoryPanel.SetActive(false);
+    }
     private void Update()
     {
         if (Keyboard.current.tabKey.wasPressedThisFrame)

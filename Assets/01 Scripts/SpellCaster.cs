@@ -19,7 +19,7 @@ public class SpellCaster : MonoBehaviour
         if (obj == null) return null;
 
         obj.transform.position = firePos.position;
-        obj.transform.rotation = wand.rotation * Quaternion.Euler(0, 0, -90); ;
+        obj.transform.rotation = wand.rotation * Quaternion.Euler(0, 0, 90); ;
 
         AttackSpell attack = obj.GetComponent<AttackSpell>();
         if (datas[index] is AttackSpellData attackData)

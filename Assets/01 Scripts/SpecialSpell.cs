@@ -24,6 +24,7 @@ public class SpecialSpell : MonoBehaviour
     public void Init(SpecialSpellData spellData)
     {
         data = spellData;
+        type = data.SpecialType;
     }
 
     private void Awake()
@@ -36,7 +37,6 @@ public class SpecialSpell : MonoBehaviour
     }
     private void Start()
     {
-        type = data.SpecialType;
         switch (type)
         {
             case SpecialType.None:
@@ -142,8 +142,9 @@ public class SpecialSpell : MonoBehaviour
     
     public void ReturnPool()
     {
-        ProjectileObjectPoolManager.instance.ReturnObject(data.SpellName, this.gameObject);
-        Destroy(gameObject.GetComponent<SpecialSpell>());
+        Destroy(GetComponent<SpecialSpell>());
+        if (type == SpecialType.Bounce) return;
+        attackSpell.ReturnPool();
     }
 
 
