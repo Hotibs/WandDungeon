@@ -35,15 +35,25 @@ public class PlayerManager : MonoBehaviour
     {
         level++;
         exp -= maxExp;
-        //레벨업 이벤트
+        LevelUpManager.instance.OpenPopup();
+        GameManager.instance.GamePause();
     }
     public void GetExp(int exp)
     {
         this.exp += exp;
+        if(this.exp >= maxExp)
+        {
+            LevelUp();
+        }
     }
     public void GetGold(int gold)
     {
         this.gold += gold;
+    }
+
+    public void UseGold(int gold)
+    {
+        this.gold -= gold;
     }
 
 }

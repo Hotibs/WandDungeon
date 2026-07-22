@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WandData
   wandName: BasicWand
   slotCount: 3
-  castDelay: 0.4
-  rechargeTime: 1
+  castDelay: 0.05
+  rechargeTime: 0.1
   maxMana: 100
   manaRegen: 10

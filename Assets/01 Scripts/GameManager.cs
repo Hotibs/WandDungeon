@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using Unity.VisualScripting;
+using UnityEngine;
 
 enum GameState
 {
@@ -13,6 +15,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public int gameSpeed;
+    public TextMeshProUGUI speedText;
     GameState gameState;
 
     private void Awake()
@@ -48,5 +52,12 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         gameState = GameState.GameOver;
+    }
+    public void Speedbtn()
+    {
+        if (gameSpeed >= 8) gameSpeed = 0;
+        gameSpeed++;
+        Time.timeScale = gameSpeed;
+        speedText.text = $"{gameSpeed}x spd";
     }
 }

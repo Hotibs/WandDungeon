@@ -9,10 +9,15 @@ public class SpellInventory : MonoBehaviour
 
     Image[] icons;
     SlotManager slotManager;
-
-    private void Start()
+    private void Awake()
     {
         slotManager = SlotManager.Instance;
+        slotManager.SetInventory(this);
+    }
+    private void Start()
+    {
+        
+        UpdateInventory();
     }
     private void OnEnable()
     {
@@ -37,6 +42,7 @@ public class SpellInventory : MonoBehaviour
             }
             icons[i].sprite = (spellDatas[i].Spriteicon);
         }
+        if (slotManager == null) return;
         slotManager.GetInven(spellDatas);
     }
     
