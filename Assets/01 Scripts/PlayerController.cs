@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        PlayerUiManger.instance.SetHPBar(nowHP, maxHP);
     }
 
     private void OnEnable()
@@ -59,6 +60,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float dmg)
     {
         nowHP -= dmg;
+        PlayerUiManger.instance.SetHPBar(nowHP, maxHP);
         if (nowHP <= 0)
         {
             nowHP = 0;
@@ -67,7 +69,7 @@ public class PlayerController : MonoBehaviour
     }
     void Die()
     {
-
+        GameManager.instance.GameOver();
     }
 
 }

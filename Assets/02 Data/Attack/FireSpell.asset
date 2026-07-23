@@ -17,7 +17,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 5485f9ca07bbe9a4a958faf271bb8f7f, type: 3}
   tier: 1
   dropPer: 1
-  damage: 15
+  damage: 45
   speed: 3
   lifeTime: 5
   projectile: {fileID: 4895823889038109369, guid: 6c35b4ffa094120439dd14b089f12bf0, type: 3}

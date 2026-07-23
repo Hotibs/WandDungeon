@@ -7314,19 +7314,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpellInventory
   spellDatas:
   - {fileID: 11400000, guid: c0407fdfb2a23f34cbcfe756c2ffe6bb, type: 2}
-  - {fileID: 11400000, guid: 0cff4956957a9d740a3fa03b70ab99bc, type: 2}
-  - {fileID: 11400000, guid: 84d2f2d8cc6bd0c47ac28ef702dbf750, type: 2}
-  - {fileID: 11400000, guid: f06014dd0bcbf8e418e9f714a60e1a74, type: 2}
-  - {fileID: 11400000, guid: c2a2db45c5bbf9c45998555dc2cf5167, type: 2}
-  - {fileID: 11400000, guid: 3e6edc596ad3f6c49920d1634d86a508, type: 2}
-  - {fileID: 11400000, guid: c0407fdfb2a23f34cbcfe756c2ffe6bb, type: 2}
-  - {fileID: 11400000, guid: 0cff4956957a9d740a3fa03b70ab99bc, type: 2}
-  - {fileID: 11400000, guid: f06014dd0bcbf8e418e9f714a60e1a74, type: 2}
-  - {fileID: 11400000, guid: c1df51a3edc2b9a4a9b734aac7c6eede, type: 2}
-  - {fileID: 11400000, guid: 4a362b569ffc6234aaee9098441aca02, type: 2}
-  - {fileID: 11400000, guid: 13ac60966d955824ebb8ba7445f6c633, type: 2}
-  - {fileID: 11400000, guid: 8caffc52fa7f91f4aa4d2534c6934227, type: 2}
-  - {fileID: 11400000, guid: 537a35c6fc3fd05408ea949a12210add, type: 2}
 --- !u!1 &7475122081003035018
 GameObject:
   m_ObjectHideFlags: 0

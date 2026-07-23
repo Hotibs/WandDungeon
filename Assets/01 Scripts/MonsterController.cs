@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mono.Cecil;
+using System;
 using UnityEngine;
 
 public class MonsterController : MonoBehaviour
@@ -12,6 +13,8 @@ public class MonsterController : MonoBehaviour
 
     float range;
 
+    float damage;
+
     SpriteRenderer sr;
 
     int dropGold;
@@ -24,7 +27,8 @@ public class MonsterController : MonoBehaviour
         dropGold = 5;
         dropExp = 5;
         moveSpeed = 2f;
-        range = 2f;
+        range = 0f;
+        damage = 2f;
         sr = GetComponent<SpriteRenderer>();
     }
 
@@ -111,6 +115,7 @@ public class MonsterController : MonoBehaviour
             if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
                 Die();
+                collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage*2);
             }
         }
     }

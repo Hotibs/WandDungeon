@@ -29,6 +29,7 @@ public class PlayerManager : MonoBehaviour
         level = 1;
         exp = 0;
         maxExp = 20;
+        PlayerUiManger.instance.SetGold(gold);
     }
 
     public void LevelUp()
@@ -49,6 +50,7 @@ public class PlayerManager : MonoBehaviour
     public void GetGold(int gold)
     {
         this.gold += gold;
+        PlayerUiManger.instance.SetGold(gold);
     }
 
     public void UseGold(int gold)

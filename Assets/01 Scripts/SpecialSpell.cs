@@ -109,6 +109,10 @@ public class SpecialSpell : MonoBehaviour
     IEnumerator ScaleUp()
     {
         Collider2D[] hits = null ;
+        Vector3 prevScale = transform.localScale;
+        float prevRad = ccd.radius;
+        Vector2 prevSize = bcd.size;
+
         speed = 0f;
         if (ccd != null)
         {
@@ -120,6 +124,7 @@ public class SpecialSpell : MonoBehaviour
                 yield return null;
             }
             hits = Physics2D.OverlapCircleAll(transform.position, ccd.radius, 1 << LayerMask.NameToLayer("Monster"));
+            ccd.radius = prevRad;
         }
         else
         {
@@ -131,12 +136,14 @@ public class SpecialSpell : MonoBehaviour
                 yield return null;
             }
             hits = Physics2D.OverlapBoxAll(transform.position, bcd.size, transform.eulerAngles.z, 1 << LayerMask.NameToLayer("Monster"));
+            bcd.size = prevSize;
         }
         foreach (Collider2D hit in hits)
         {
             hit.GetComponent<MonsterController>().TakeDamage(data.Value);
         }
-
+        transform.localScale = prevScale;
+        
         ReturnPool();
     }
     
