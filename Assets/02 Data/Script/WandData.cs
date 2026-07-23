@@ -15,7 +15,9 @@ public class WandData : ScriptableObject
 
     [SerializeField] float manaRegen;
 
-    
+    [SerializeField] Sprite icon;
+
+    [SerializeField] int price;
 
 
     public string WandName => wandName;
@@ -24,6 +26,6 @@ public class WandData : ScriptableObject
     public float RechargeTime => rechargeTime;
     public float MaxMana => maxMana;
     public float ManaRegen => manaRegen;
-    
-
+    public Sprite Icon => icon;
+    public int Price => price;
 }

@@ -7,33 +7,49 @@ public class SpellSlot : MonoBehaviour
     [SerializeField] WandData wandData;
     public SpellData[] spells;
 
+    int slot;
+    WandInstance wand;
+
     SlotManager slotManager;
 
     Image[] icons;
+
     private void Start()
     {
         slotManager = SlotManager.Instance;
-        spells = new SpellData[wandData.SlotCount];
+        spells = new SpellData[10];
+        icons = new Image[10];
+        slot = wandData.SlotCount;
         UpdateSlotIcon();
     }
-    private void OnEnable()
+    public void SlotWand()
     {
-        icons = new Image[wandData.SlotCount];
-        
-        
+        wand = WandManager.instance.GetWand();
+        for (int i = 0; i < slot; i++)
+        {
+            if (spells[i] != null) slotManager.AddSpell(spells[i]);
+            UnequipSpell(i);
+        }
+        slot = wand.slot;
+        UpdateSlotIcon();
     }
     void UpdateSlotEnable()
     {
-        for (int i = wandData.SlotCount; i < transform.childCount; i++)
+        for (int i = 0; i < transform.childCount; i++)
         {
             Transform slot = transform.GetChild(i);
+            if(i < this.slot)
+            {
+                slot.gameObject.SetActive(true);
+                continue;
+            }
             slot.gameObject.SetActive(false);
         }
     }
     void UpdateSlotIcon()
     {
         UpdateSlotEnable();
-        for (int i = 0; i < wandData.SlotCount; i++)
+        for (int i = 0; i < slot; i++)
         {
             Transform slot = transform.GetChild(i).GetChild(1);
             icons[i] = slot.GetComponent<Image>();

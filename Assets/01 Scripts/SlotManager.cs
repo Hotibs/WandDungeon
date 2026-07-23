@@ -22,6 +22,7 @@ public class SlotManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+    
     public void SetInventory(SpellInventory inventory)
     {
         this.inventory = inventory;

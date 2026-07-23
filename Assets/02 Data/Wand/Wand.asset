@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30b522dc564d323408f259478962c0d2, type: 3}
-  m_Name: WandData
+  m_Name: Wand
   m_EditorClassIdentifier: Assembly-CSharp::WandData
-  wandName: BasicWand
-  slotCount: 3
-  castDelay: 0.05
-  rechargeTime: 0.1
-  maxMana: 100
-  manaRegen: 10
+  wandName: 
+  slotCount: 10
+  castDelay: 0.5
+  rechargeTime: 0.7
+  maxMana: 200
+  manaRegen: 20
+  icon: {fileID: 6021327626389640913, guid: 3c1905bf438157d40ba3f8198de6e32f, type: 3}
+  price: 100
